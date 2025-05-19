@@ -1,0 +1,80 @@
+{{ define "main" }}
+<div class="container">
+  <h1 class="mb-4">{{ .Title }}</h1>
+  <div class="lead mb-4">
+    {{ .Content }}
+  </div>
+
+  {{ if .Site.BuildDrafts }}
+  <!-- Development Mode: Show draft status badges -->
+  <div class="alert alert-info mb-4">
+    <i class="bi bi-info-circle me-2"></i>Development Mode: Showing all places, including drafts
+  </div>
+  {{ end }}
+  
+  <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+    {{ $pages := .Pages }}
+    {{ if not .Site.BuildDrafts }}
+      {{ $pages = where .Pages "Draft" false }}
+    {{ end }}
+    
+    {{ range $pages }}
+    <div class="col">
+      <div class="card h-100 shadow-sm {{ if .Draft }}border-warning{{ end }}">
+        {{ if .Draft }}
+        <div class="position-absolute top-0 end-0 m-2">
+          <span class="badge bg-warning text-dark">Draft</span>
+        </div>
+        {{ end }}
+        
+        {{ $featured := .Resources.GetMatch .Params.featured_image }}
+        {{ with $featured }}
+        <img src="{{ .RelPermalink }}" class="card-img-top" alt="{{ $.Title }}" style="height: 200px; object-fit: cover;">
+        {{ else }}
+        <div class="card-img-top bg-light d-flex align-items-center justify-content-center" style="height: 200px;">
+          <i class="bi bi-image text-muted" style="font-size: 3rem;"></i>
+        </div>
+        {{ end }}
+        <div class="card-body">
+          <h5 class="card-title">
+            {{ if .Params.rentable }}
+            <i class="bi bi-house-door me-2 text-primary"></i>
+            {{ else }}
+            <i class="bi bi-geo-alt me-2 text-success"></i>
+            {{ end }}
+            <a href="{{ .RelPermalink }}" class="text-decoration-none">{{ .Title }}</a>
+          </h5>
+          
+          <div class="mb-3">
+            {{ with .Params.description }}
+            <p class="card-text">{{ . }}</p>
+            {{ end }}
+          </div>
+
+          <div class="mt-auto">
+            <div class="d-flex flex-wrap gap-2">
+              {{ range .Params.types }}
+              <span class="badge bg-primary">{{ . }}</span>
+              {{ end }}
+              {{ range .Params.categories }}
+              <span class="badge bg-success">{{ . }}</span>
+              {{ end }}
+            </div>
+            
+            <div class="mt-3">
+              {{ if .Params.rentable }}
+                {{ if .Params.available }}
+                <span class="badge bg-success">Available</span>
+                {{ else }}
+                <span class="badge bg-secondary">Not Available</span>
+                {{ end }}
+              {{ end }}
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    {{ end }}
+  </div>
+</div>
+{{ end }} 

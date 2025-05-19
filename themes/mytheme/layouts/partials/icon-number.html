@@ -1,0 +1,27 @@
+<span class="{{ .class }}">
+{{- range $char := split .number "" -}}
+    {{- if eq $char "0" -}}
+        <i class="bi bi-0-square"></i>
+    {{- else if eq $char "1" -}}
+        <i class="bi bi-1-square"></i>
+    {{- else if eq $char "2" -}}
+        <i class="bi bi-2-square"></i>
+    {{- else if eq $char "3" -}}
+        <i class="bi bi-3-square"></i>
+    {{- else if eq $char "4" -}}
+        <i class="bi bi-4-square"></i>
+    {{- else if eq $char "5" -}}
+        <i class="bi bi-5-square"></i>
+    {{- else if eq $char "6" -}}
+        <i class="bi bi-6-square"></i>
+    {{- else if eq $char "7" -}}
+        <i class="bi bi-7-square"></i>
+    {{- else if eq $char "8" -}}
+        <i class="bi bi-8-square"></i>
+    {{- else if eq $char "9" -}}
+        <i class="bi bi-9-square"></i>
+    {{- else -}}
+        {{ $char }}
+    {{- end -}}
+{{- end -}}
+</span> 

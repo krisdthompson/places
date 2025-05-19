@@ -1,0 +1,20 @@
+<div class="row row-cols-1 row-cols-md-2 g-4">
+  <div class="col">
+    {{ $email := .Get "contact-email" }}
+    {{ $phone := .Get "contact-phone" }}
+    {{ $location := .Get "location" }}
+    {{ $emailParts := split $email "@" }}
+
+    {{- partial "contact-card.html" (dict "icon" "" "title" "" "class" "success" "content" (dict
+      "email" $email
+      "emailParts" $emailParts
+      "phone" $phone
+    )) -}}
+  </div>
+
+  <div class="col">
+    {{- partial "contact-card.html" (dict "icon" "geo-alt-fill" "title" "Office Location" "class" "primary" "content" (dict
+      "location" $location
+    )) -}}
+  </div>
+</div> 

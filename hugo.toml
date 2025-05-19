@@ -1,0 +1,17 @@
+baseURL = "https://places.kttex.com/"
+languageCode = "en-us"
+title = "Places"
+theme = "mytheme"
+
+[params]
+  description = "Interesting places to visit and stay"
+
+[taxonomies]
+  category = "categories"
+  tag = "tags"
+  type = "types"  # For different types of places
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true  # Allows raw HTML in markdown content
