@@ -25,4 +25,13 @@ fi
 
 # Sync to server
 echo "Publishing to $HUGO_BASEURL"
-rsync -avz --delete public/ ${DEPLOY_USER}@${DEPLOY_HOST}:${DEPLOY_PATH}/ -e "ssh -p ${DEPLOY_PORT}" 
+echo "Debug: DEPLOY_HOST=${DEPLOY_HOST}"
+echo "Debug: DEPLOY_PATH=${DEPLOY_PATH}"
+echo "Debug: rsync command: rsync -avz --delete public/ ${DEPLOY_HOST}:${DEPLOY_PATH}/"
+rsync -avz --delete public/ "${DEPLOY_HOST}:${DEPLOY_PATH}/"
+
+# Check if rsync was successful
+if [ $? -ne 0 ]; then
+    echo "Rsync failed! Aborting publish."
+    exit 1
+fi 

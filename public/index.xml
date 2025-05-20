@@ -1,47 +1,60 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>Places</title>
-    <link>http://localhost:1313/</link>
-    <description>Recent content on Places</description>
-    <generator>Hugo</generator>
-    <language>en-us</language>
-    <lastBuildDate>Mon, 19 May 2025 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>15601 CL</title>
-      <link>http://localhost:1313/places/15601cl/</link>
-      <pubDate>Mon, 19 May 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/places/15601cl/</guid>
-      <description>&lt;p&gt;In Travis Landing, currently rented.&lt;/p&gt;&#xA;&lt;p&gt;15601 CL is a 3 bedroom, 1 bath, 1X00 sq ft, 1 story house.&lt;/p&gt;&#xA;&lt;p&gt;Built in 1989?&lt;/p&gt;&#xA;&lt;p&gt;Features:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Skylights in living room and bathroom&lt;/li&gt;&#xA;&lt;li&gt;Front porch&lt;/li&gt;&#xA;&lt;li&gt;Small fenced yard&lt;/li&gt;&#xA;&lt;li&gt;Single story&lt;/li&gt;&#xA;&lt;li&gt;Approximately 1X00 sq ft&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;&lt;figure&gt;&lt;img src=&#34;exterior.jpg&#34;&#xA;    alt=&#34;Front view of 15601 CL&#34;&gt;&lt;figcaption&gt;&#xA;      &lt;p&gt;Front view of 15601 CL&lt;/p&gt;&#xA;    &lt;/figcaption&gt;&#xA;&lt;/figure&gt;&#xA;&#xA;&lt;figure&gt;&lt;img src=&#34;living-room.jpg&#34;&#xA;    alt=&#34;Living room with skylight&#34;&gt;&lt;figcaption&gt;&#xA;      &lt;p&gt;Living room with skylight&lt;/p&gt;&#xA;    &lt;/figcaption&gt;&#xA;&lt;/figure&gt;&#xA;&#xA;&lt;figure&gt;&lt;img src=&#34;backyard.jpg&#34;&#xA;    alt=&#34;Fenced backyard&#34;&gt;&lt;figcaption&gt;&#xA;      &lt;p&gt;Fenced backyard&lt;/p&gt;&#xA;    &lt;/figcaption&gt;&#xA;&lt;/figure&gt;&#xA;&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>5508 LL</title>
-      <link>http://localhost:1313/places/5508ll/</link>
-      <pubDate>Mon, 19 May 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/places/5508ll/</guid>
-      <description>&lt;p&gt;5508 LL is located in Lake Landing, offering wonderful lake views and easy water access.&lt;/p&gt;&#xA;&lt;p&gt;Features:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Lakefront location&lt;/li&gt;&#xA;&lt;li&gt;Quiet neighborhood&lt;/li&gt;&#xA;&lt;li&gt;Close to amenities&lt;/li&gt;&#xA;&lt;li&gt;Beautiful sunset views&lt;/li&gt;&#xA;&lt;/ul&gt;</description>
-    </item>
-    <item>
-      <title>Opeongo Point</title>
-      <link>http://localhost:1313/places/opeongopoint/</link>
-      <pubDate>Mon, 19 May 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/places/opeongopoint/</guid>
-      <description>&lt;p&gt;A beautiful lakefront property with amazing sunset views.&lt;/p&gt;&#xA;&lt;p&gt;Features:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Waterfront location&lt;/li&gt;&#xA;&lt;li&gt;Sunset views&lt;/li&gt;&#xA;&lt;li&gt;Lake access&lt;/li&gt;&#xA;&lt;li&gt;Peaceful setting&lt;/li&gt;&#xA;&lt;/ul&gt;</description>
-    </item>
-    <item>
-      <title>Thompson Cabins</title>
-      <link>http://localhost:1313/places/thompsoncabins/</link>
-      <pubDate>Mon, 19 May 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/places/thompsoncabins/</guid>
-      <description>&lt;p&gt;Thompson Cabins offers multiple rental units perfect for weekend getaways or extended stays.&lt;/p&gt;&#xA;&lt;p&gt;Features:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Multiple cabin options&lt;/li&gt;&#xA;&lt;li&gt;Fully furnished&lt;/li&gt;&#xA;&lt;li&gt;Year-round availability&lt;/li&gt;&#xA;&lt;li&gt;Flexible rental terms&lt;/li&gt;&#xA;&lt;/ul&gt;</description>
-    </item>
-    <item>
-      <title>Aggie Park</title>
-      <link>http://localhost:1313/places/aggiepark/</link>
-      <pubDate>Tue, 26 Mar 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/places/aggiepark/</guid>
-      <description>&lt;p&gt;Aggie Park is a beautiful 20-acre green space located at the heart of Texas A&amp;amp;M University&amp;rsquo;s campus. Opened in 2022, this modern park space serves as a gathering place for students, faculty, and visitors.&lt;/p&gt;&#xA;&lt;p&gt;Features:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Walking trails and paths&lt;/li&gt;&#xA;&lt;li&gt;Outdoor amphitheater&lt;/li&gt;&#xA;&lt;li&gt;Lakes and water features&lt;/li&gt;&#xA;&lt;li&gt;Open green spaces&lt;/li&gt;&#xA;&lt;li&gt;Study areas with Wi-Fi&lt;/li&gt;&#xA;&lt;li&gt;Native Texas landscaping&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;The park is open to the public and hosts various events throughout the year, from informal gatherings to organized university functions.&lt;/p&gt;</description>
-    </item>
-  </channel>
-</rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Places</title><link>https://places.kttex.com/</link><description>Recent content on Places</description><generator>Hugo</generator><language>en-us</language><lastBuildDate>Mon, 19 May 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://places.kttex.com/index.xml" rel="self" type="application/rss+xml"/><item><title>15601 CL</title><link>https://places.kttex.com/places/15601cl/</link><pubDate>Mon, 19 May 2025 00:00:00 +0000</pubDate><guid>https://places.kttex.com/places/15601cl/</guid><description>&lt;p>In Travis Landing, currently rented.&lt;/p>
+&lt;p>15601 CL is a 3 bedroom, 1 bath, 1X00 sq ft, 1 story house.&lt;/p>
+&lt;p>Built in 1989?&lt;/p>
+&lt;p>Features:&lt;/p>
+&lt;ul>
+&lt;li>Skylights in living room and bathroom&lt;/li>
+&lt;li>Front porch&lt;/li>
+&lt;li>Small fenced yard&lt;/li>
+&lt;li>Single story&lt;/li>
+&lt;li>Approximately 1X00 sq ft&lt;/li>
+&lt;/ul>
+&lt;p>&lt;figure>&lt;img src="exterior.jpg"
+ alt="Front view of 15601 CL">&lt;figcaption>
+ &lt;p>Front view of 15601 CL&lt;/p>
+ &lt;/figcaption>
+&lt;/figure>
+
+&lt;figure>&lt;img src="living-room.jpg"
+ alt="Living room with skylight">&lt;figcaption>
+ &lt;p>Living room with skylight&lt;/p>
+ &lt;/figcaption>
+&lt;/figure>
+
+&lt;figure>&lt;img src="backyard.jpg"
+ alt="Fenced backyard">&lt;figcaption>
+ &lt;p>Fenced backyard&lt;/p>
+ &lt;/figcaption>
+&lt;/figure>
+&lt;/p></description></item><item><title>5508 LL</title><link>https://places.kttex.com/places/5508ll/</link><pubDate>Mon, 19 May 2025 00:00:00 +0000</pubDate><guid>https://places.kttex.com/places/5508ll/</guid><description>&lt;p>5508 LL is located in Lake Landing, offering wonderful lake views and easy water access.&lt;/p>
+&lt;p>Features:&lt;/p>
+&lt;ul>
+&lt;li>Lakefront location&lt;/li>
+&lt;li>Quiet neighborhood&lt;/li>
+&lt;li>Close to amenities&lt;/li>
+&lt;li>Beautiful sunset views&lt;/li>
+&lt;/ul></description></item><item><title>Opeongo Point</title><link>https://places.kttex.com/places/opeongopoint/</link><pubDate>Mon, 19 May 2025 00:00:00 +0000</pubDate><guid>https://places.kttex.com/places/opeongopoint/</guid><description>&lt;p>A beautiful lakefront property with amazing sunset views.&lt;/p>
+&lt;p>Features:&lt;/p>
+&lt;ul>
+&lt;li>Waterfront location&lt;/li>
+&lt;li>Sunset views&lt;/li>
+&lt;li>Lake access&lt;/li>
+&lt;li>Peaceful setting&lt;/li>
+&lt;/ul></description></item><item><title>Thompson Cabins</title><link>https://places.kttex.com/places/thompsoncabins/</link><pubDate>Mon, 19 May 2025 00:00:00 +0000</pubDate><guid>https://places.kttex.com/places/thompsoncabins/</guid><description>&lt;p>Thompson Cabins offers multiple rental units perfect for weekend getaways or extended stays.&lt;/p>
+&lt;p>Features:&lt;/p>
+&lt;ul>
+&lt;li>Multiple cabin options&lt;/li>
+&lt;li>Fully furnished&lt;/li>
+&lt;li>Year-round availability&lt;/li>
+&lt;li>Flexible rental terms&lt;/li>
+&lt;/ul></description></item><item><title>Aggie Park</title><link>https://places.kttex.com/places/aggiepark/</link><pubDate>Tue, 26 Mar 2024 00:00:00 +0000</pubDate><guid>https://places.kttex.com/places/aggiepark/</guid><description>&lt;p>Aggie Park is a beautiful 20-acre green space located at the heart of Texas A&amp;amp;M University&amp;rsquo;s campus. Opened in 2022, this modern park space serves as a gathering place for students, faculty, and visitors.&lt;/p>
+&lt;p>Features:&lt;/p>
+&lt;ul>
+&lt;li>Walking trails and paths&lt;/li>
+&lt;li>Outdoor amphitheater&lt;/li>
+&lt;li>Lakes and water features&lt;/li>
+&lt;li>Open green spaces&lt;/li>
+&lt;li>Study areas with Wi-Fi&lt;/li>
+&lt;li>Native Texas landscaping&lt;/li>
+&lt;/ul>
+&lt;p>The park is open to the public and hosts various events throughout the year, from informal gatherings to organized university functions.&lt;/p></description></item></channel></rss>
