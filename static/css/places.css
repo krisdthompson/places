@@ -1,0 +1,29 @@
+/* Theme Variables */
+:root {
+    --soft-white: #FDFBF7;
+    --warm-stone: #E6E2D6;
+    --sage: #B7BEA5;
+    --earth: #96836C;
+    --bark: #7A6552;
+}
+
+/* Only custom styles that can't be achieved with Bootstrap */
+.bg-pattern {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    width: 15vw;
+    opacity: 0.03;
+    pointer-events: none;
+    z-index: 0;
+}
+
+/* Hover effect for place items - can't be done with Bootstrap alone */
+.place-list-item {
+    transition: transform 0.2s;
+}
+
+.place-list-item:hover {
+    transform: translateX(5px);
+}

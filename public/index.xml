@@ -1,11 +1,47 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Rental Properties on Places</title>
+    <title>Places</title>
     <link>http://localhost:1313/</link>
-    <description>Recent content in Rental Properties on Places</description>
+    <description>Recent content on Places</description>
     <generator>Hugo</generator>
     <language>en-us</language>
+    <lastBuildDate>Mon, 19 May 2025 00:00:00 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>15601 CL</title>
+      <link>http://localhost:1313/places/15601cl/</link>
+      <pubDate>Mon, 19 May 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/places/15601cl/</guid>
+      <description>&lt;p&gt;In Travis Landing, currently rented.&lt;/p&gt;&#xA;&lt;p&gt;15601 CL is a 3 bedroom, 1 bath, 1X00 sq ft, 1 story house.&lt;/p&gt;&#xA;&lt;p&gt;Built in 1989?&lt;/p&gt;&#xA;&lt;p&gt;Features:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Skylights in living room and bathroom&lt;/li&gt;&#xA;&lt;li&gt;Front porch&lt;/li&gt;&#xA;&lt;li&gt;Small fenced yard&lt;/li&gt;&#xA;&lt;li&gt;Single story&lt;/li&gt;&#xA;&lt;li&gt;Approximately 1X00 sq ft&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;&lt;figure&gt;&lt;img src=&#34;exterior.jpg&#34;&#xA;    alt=&#34;Front view of 15601 CL&#34;&gt;&lt;figcaption&gt;&#xA;      &lt;p&gt;Front view of 15601 CL&lt;/p&gt;&#xA;    &lt;/figcaption&gt;&#xA;&lt;/figure&gt;&#xA;&#xA;&lt;figure&gt;&lt;img src=&#34;living-room.jpg&#34;&#xA;    alt=&#34;Living room with skylight&#34;&gt;&lt;figcaption&gt;&#xA;      &lt;p&gt;Living room with skylight&lt;/p&gt;&#xA;    &lt;/figcaption&gt;&#xA;&lt;/figure&gt;&#xA;&#xA;&lt;figure&gt;&lt;img src=&#34;backyard.jpg&#34;&#xA;    alt=&#34;Fenced backyard&#34;&gt;&lt;figcaption&gt;&#xA;      &lt;p&gt;Fenced backyard&lt;/p&gt;&#xA;    &lt;/figcaption&gt;&#xA;&lt;/figure&gt;&#xA;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>5508 LL</title>
+      <link>http://localhost:1313/places/5508ll/</link>
+      <pubDate>Mon, 19 May 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/places/5508ll/</guid>
+      <description>&lt;p&gt;5508 LL is located in Lake Landing, offering wonderful lake views and easy water access.&lt;/p&gt;&#xA;&lt;p&gt;Features:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Lakefront location&lt;/li&gt;&#xA;&lt;li&gt;Quiet neighborhood&lt;/li&gt;&#xA;&lt;li&gt;Close to amenities&lt;/li&gt;&#xA;&lt;li&gt;Beautiful sunset views&lt;/li&gt;&#xA;&lt;/ul&gt;</description>
+    </item>
+    <item>
+      <title>Opeongo Point</title>
+      <link>http://localhost:1313/places/opeongopoint/</link>
+      <pubDate>Mon, 19 May 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/places/opeongopoint/</guid>
+      <description>&lt;p&gt;A beautiful lakefront property with amazing sunset views.&lt;/p&gt;&#xA;&lt;p&gt;Features:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Waterfront location&lt;/li&gt;&#xA;&lt;li&gt;Sunset views&lt;/li&gt;&#xA;&lt;li&gt;Lake access&lt;/li&gt;&#xA;&lt;li&gt;Peaceful setting&lt;/li&gt;&#xA;&lt;/ul&gt;</description>
+    </item>
+    <item>
+      <title>Thompson Cabins</title>
+      <link>http://localhost:1313/places/thompsoncabins/</link>
+      <pubDate>Mon, 19 May 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/places/thompsoncabins/</guid>
+      <description>&lt;p&gt;Thompson Cabins offers multiple rental units perfect for weekend getaways or extended stays.&lt;/p&gt;&#xA;&lt;p&gt;Features:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Multiple cabin options&lt;/li&gt;&#xA;&lt;li&gt;Fully furnished&lt;/li&gt;&#xA;&lt;li&gt;Year-round availability&lt;/li&gt;&#xA;&lt;li&gt;Flexible rental terms&lt;/li&gt;&#xA;&lt;/ul&gt;</description>
+    </item>
+    <item>
+      <title>Aggie Park</title>
+      <link>http://localhost:1313/places/aggiepark/</link>
+      <pubDate>Tue, 26 Mar 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/places/aggiepark/</guid>
+      <description>&lt;p&gt;Aggie Park is a beautiful 20-acre green space located at the heart of Texas A&amp;amp;M University&amp;rsquo;s campus. Opened in 2022, this modern park space serves as a gathering place for students, faculty, and visitors.&lt;/p&gt;&#xA;&lt;p&gt;Features:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Walking trails and paths&lt;/li&gt;&#xA;&lt;li&gt;Outdoor amphitheater&lt;/li&gt;&#xA;&lt;li&gt;Lakes and water features&lt;/li&gt;&#xA;&lt;li&gt;Open green spaces&lt;/li&gt;&#xA;&lt;li&gt;Study areas with Wi-Fi&lt;/li&gt;&#xA;&lt;li&gt;Native Texas landscaping&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;The park is open to the public and hosts various events throughout the year, from informal gatherings to organized university functions.&lt;/p&gt;</description>
+    </item>
   </channel>
 </rss>

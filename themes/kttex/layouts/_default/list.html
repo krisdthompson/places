@@ -1,0 +1,69 @@
+{{ define "main" }}
+<div class="container mt-5">
+    <h1 class="mb-4">{{ .Title }}</h1>
+    {{ with .Description }}
+        <div class="lead mb-4">{{ . }}</div>
+    {{ end }}
+    
+    {{ .Content }}
+
+    <div class="row row-cols-1 row-cols-md-2 g-4">
+        {{ range .Pages }}
+            <div class="col">
+                <div class="card h-100">
+                    {{ with .Params.featured_image }}
+                        {{ $image := $.Resources.GetMatch . }}
+                        {{ with $image }}
+                            <img src="{{ .RelPermalink }}" class="card-img-top" alt="{{ $.Title }}">
+                        {{ end }}
+                    {{ end }}
+                    <div class="card-body">
+                        <h5 class="card-title">
+                            <a href="{{ .RelPermalink }}" class="text-decoration-none">
+                                {{ if eq .Section "places" }}
+                                    <i class="bi bi-building me-2"></i>
+                                {{ end }}
+                                {{ .Title }}
+                            </a>
+                        </h5>
+                        {{ with .Description }}
+                            <p class="card-text">{{ . }}</p>
+                        {{ end }}
+                        {{ with .Params.types }}
+                            <div class="mb-2">
+                                {{ range . }}
+                                    <span class="badge bg-primary me-1">
+                                        {{ if eq . "rentable" }}
+                                            <i class="bi bi-house-check me-1"></i>
+                                        {{ else if eq . "tovisit" }}
+                                            <i class="bi bi-calendar-check me-1"></i>
+                                        {{ else if eq . "beenthere" }}
+                                            <i class="bi bi-check-circle me-1"></i>
+                                        {{ else if eq . "neato" }}
+                                            <i class="bi bi-star me-1"></i>
+                                        {{ else if eq . "buckit" }}
+                                            <i class="bi bi-bucket me-1"></i>
+                                        {{ else if eq . "avoid" }}
+                                            <i class="bi bi-exclamation-triangle me-1"></i>
+                                        {{ end }}
+                                        {{ . | title }}
+                                    </span>
+                                {{ end }}
+                            </div>
+                        {{ end }}
+                        {{ with .Params.tags }}
+                            <div>
+                                {{ range . }}
+                                    <span class="badge bg-secondary me-1">
+                                        <i class="bi bi-tag me-1"></i>{{ . }}
+                                    </span>
+                                {{ end }}
+                            </div>
+                        {{ end }}
+                    </div>
+                </div>
+            </div>
+        {{ end }}
+    </div>
+</div>
+{{ end }}

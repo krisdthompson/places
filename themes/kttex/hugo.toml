@@ -1,0 +1,16 @@
+baseURL = 'https://example.org/'
+languageCode = 'en-US'
+title = 'Places to Remember'
+
+[[menus.main]]
+name = 'Places'
+pageRef = '/places'
+weight = 10
+
+[params]
+  description = "A collection of memorable locations"
+
+[module]
+  [module.hugoVersion]
+    extended = false
+    min = "0.116.0"
