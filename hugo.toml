@@ -1,17 +1,22 @@
 baseURL = "https://places.kttex.com/"
 languageCode = "en-us"
 title = "Places"
-theme = "mytheme"
+theme = "simple"
 
 [params]
-  description = "Interesting places to visit and stay"
+  description = "A collection of places"
 
 [taxonomies]
-  category = "categories"
   tag = "tags"
-  type = "types"  # For different types of places
+  type = "types"  # rentable, tovisit, beenthere, neato, buckit, avoid
 
 [markup]
   [markup.goldmark]
     [markup.goldmark.renderer]
       unsafe = true  # Allows raw HTML in markdown content
+
+# Ensure the places section correctly handles pages in subdirectories
+[cascade]
+  [cascade._target]
+    path = "/places/**"
+  type = "places"

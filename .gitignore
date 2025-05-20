@@ -10,9 +10,9 @@
 /.hugo_build.lock
 
 # Environment variables and secrets
-/env/
-/env.production
-/env.local
+env/hugo.env
+# But don't ignore the sample
+!env/hugo.env.sample
 
 # OS generated files
 .DS_Store

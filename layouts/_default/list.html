@@ -1,0 +1,37 @@
+{{ define "main" }}
+<div class="container mt-5">
+    <h1 class="mb-4">{{ .Title }}</h1>
+    {{ with .Description }}
+        <div class="lead mb-4">{{ . }}</div>
+    {{ end }}
+    
+    {{ .Content }}
+
+    {{ range .Pages }}
+        <div class="card mb-3 border-0 shadow-sm place-list-item">
+            <div class="card-body">
+                <h5 class="card-title">
+                    <a href="{{ .RelPermalink }}" class="text-decoration-none text-primary">{{ .Title }}</a>
+                </h5>
+                {{ with .Description }}
+                    <p class="card-text text-secondary">{{ . }}</p>
+                {{ end }}
+                {{ with .Params.types }}
+                    <div class="mb-2">
+                        {{ range . }}
+                            <span class="badge bg-primary bg-opacity-75 me-1">{{ . }}</span>
+                        {{ end }}
+                    </div>
+                {{ end }}
+                {{ with .Params.tags }}
+                    <div>
+                        {{ range . }}
+                            <span class="badge bg-secondary bg-opacity-75 me-1">{{ . }}</span>
+                        {{ end }}
+                    </div>
+                {{ end }}
+            </div>
+        </div>
+    {{ end }}
+</div>
+{{ end }} 

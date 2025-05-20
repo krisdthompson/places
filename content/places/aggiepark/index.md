@@ -1,16 +1,13 @@
-+++
-title = "Aggie Park"
-date = "2024-03-26"
-draft = false
-rentable = false
-available = true
-types = ["park", "outdoor-space"]
-categories = ["recreational"]
-tags = ["texas-am", "outdoor", "campus"]
-description = "A 20-acre green space in the heart of Texas A&M University, featuring walking trails, an amphitheater, and recreational areas"
-images = ["aerial.jpg", "amphitheater.jpg", "lake.jpg", "trails.jpg"]  # All images for the place
-featured_image = "aerial.jpg"  # Main image used in list view
-+++
+---
+title: "Aggie Park"
+date: "2024-03-26"
+draft: false
+types: ["beenthere"]
+tags: ["park", "outdoor", "campus", "texas-am"]
+description: "A 20-acre green space in the heart of Texas A&M University, featuring walking trails, an amphitheater, and recreational areas"
+images: ["aerial.jpg", "amphitheater.jpg", "lake.jpg", "trails.jpg"]
+featured_image: "aerial.jpg"
+---
 
 Aggie Park is a beautiful 20-acre green space located at the heart of Texas A&M University's campus. Opened in 2022, this modern park space serves as a gathering place for students, faculty, and visitors.
 

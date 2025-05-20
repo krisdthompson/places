@@ -1,0 +1,118 @@
+{{ define "main" }}
+<div class="container mt-4">
+    <!-- Breadcrumbs -->
+    <nav aria-label="breadcrumb" class="mb-4">
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="/places/" class="text-decoration-none">Places</a></li>
+            <li class="breadcrumb-item active" aria-current="page">{{ .Title }}</li>
+        </ol>
+    </nav>
+
+    <div class="row g-4">
+        <!-- Main Content -->
+        <div class="col-md-8">
+            <article class="bg-white p-4 rounded shadow-sm">
+                <h1 class="mb-3">{{ .Title }}</h1>
+                {{ with .Description }}
+                    <div class="lead mb-4 text-secondary">{{ . }}</div>
+                {{ end }}
+
+                <!-- Types and Tags -->
+                {{ with .Params.types }}
+                    <div class="mb-2">
+                        {{ range . }}
+                            <span class="badge bg-primary bg-opacity-75 me-1">{{ . }}</span>
+                        {{ end }}
+                    </div>
+                {{ end }}
+                {{ with .Params.tags }}
+                    <div class="mb-4">
+                        {{ range . }}
+                            <span class="badge bg-secondary bg-opacity-75 me-1">{{ . }}</span>
+                        {{ end }}
+                    </div>
+                {{ end }}
+
+                <!-- Featured Image -->
+                {{ with .Params.featured_image }}
+                    {{ $image := $.Resources.GetMatch . }}
+                    {{ with $image }}
+                        <img src="{{ .RelPermalink }}" alt="{{ $.Title }}" class="img-fluid rounded mb-4">
+                    {{ end }}
+                {{ end }}
+
+                <!-- Content -->
+                <div class="content mb-5">
+                    {{ .Content }}
+                </div>
+
+                <!-- Additional Images -->
+                {{ $images := .Resources.ByType "image" }}
+                {{ with $images }}
+                    <div class="mt-4">
+                        <h2 class="h3 mb-4">Gallery</h2>
+                        <div class="row g-4">
+                            {{ range . }}
+                                {{ if ne .Name $.Params.featured_image }}
+                                    <div class="col-md-6">
+                                        <figure class="figure">
+                                            <img src="{{ .RelPermalink }}" alt="{{ .Title }}" class="figure-img img-fluid rounded shadow-sm">
+                                            {{ with .Title }}
+                                                <figcaption class="figure-caption text-center">{{ . }}</figcaption>
+                                            {{ end }}
+                                        </figure>
+                                    </div>
+                                {{ end }}
+                            {{ end }}
+                        </div>
+                    </div>
+                {{ end }}
+            </article>
+        </div>
+
+        <!-- Sidebar -->
+        <div class="col-md-4">
+            <div class="card border-0 shadow-sm sticky-md-top" style="top: 2rem;">
+                <div class="card-header bg-white border-bottom">
+                    <h5 class="card-title mb-0">Other Places</h5>
+                </div>
+                <div class="card-body">
+                    {{ $currentPage := . }}
+                    {{ range where .Site.RegularPages "Section" "places" }}
+                        {{ if ne . $currentPage }}
+                            <div class="mb-3">
+                                <h6 class="mb-1">
+                                    <a href="{{ .RelPermalink }}" class="text-decoration-none text-primary">{{ .Title }}</a>
+                                </h6>
+                                {{ with .Params.types }}
+                                    <div class="small mb-1">
+                                        {{ range . }}
+                                            <span class="badge bg-primary bg-opacity-75 me-1">{{ . }}</span>
+                                        {{ end }}
+                                    </div>
+                                {{ end }}
+                                {{ with .Description }}
+                                    <p class="small text-secondary mb-0">{{ . | truncate 100 }}</p>
+                                {{ end }}
+                            </div>
+                            {{ if ne . (last 1 (where $.Site.RegularPages "Section" "places")) }}
+                                <hr class="my-2">
+                            {{ end }}
+                        {{ end }}
+                    {{ end }}
+                </div>
+            </div>
+
+            <!-- Navigation between places -->
+            <div class="mt-4">
+                {{ with .PrevInSection }}
+                    <a href="{{ .RelPermalink }}" class="btn btn-outline-primary mb-2 w-100">← Previous: {{ .Title }}</a>
+                {{ end }}
+                {{ with .NextInSection }}
+                    <a href="{{ .RelPermalink }}" class="btn btn-outline-primary w-100">Next: {{ .Title }} →</a>
+                {{ end }}
+            </div>
+        </div>
+    </div>
+</div>
+{{ end }} 

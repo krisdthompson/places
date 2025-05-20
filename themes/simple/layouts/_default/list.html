@@ -1,0 +1,71 @@
+{{ define "main" }}
+<div class="container">
+  <h1 class="mb-4">{{ .Title }}</h1>
+  <div class="lead mb-4">
+    {{ .Content }}
+  </div>
+
+  <div class="places-list">
+    {{ range .Pages }}
+    <div class="place-list-item p-3 mb-4 rounded-3">
+      <div class="d-flex">
+        <!-- Image -->
+        <div class="flex-shrink-0 me-4">
+          {{ $featured := .Resources.GetMatch .Params.featured_image }}
+          {{ with $featured }}
+          <img src="{{ .RelPermalink }}" class="place-image rounded" alt="{{ $.Title }}">
+          {{ else }}
+          <div class="placeholder-image rounded">
+            <i class="bi bi-image text-muted place-type-icon"></i>
+          </div>
+          {{ end }}
+        </div>
+
+        <!-- Content -->
+        <div class="flex-grow-1">
+          <h3 class="h4 mb-2">
+            <a href="{{ .RelPermalink }}" class="text-decoration-none">{{ .Title }}</a>
+          </h3>
+
+          <!-- Types -->
+          <div class="mb-2">
+            {{ range .Params.types }}
+              {{ if eq . "rentable" }}
+              <i class="bi bi-house-door place-type-icon text-primary me-2" title="Place to Stay"></i>
+              {{ else if eq . "tovisit" }}
+              <i class="bi bi-bookmark-plus place-type-icon text-success me-2" title="Want to Visit"></i>
+              {{ else if eq . "beenthere" }}
+              <i class="bi bi-check-circle place-type-icon text-info me-2" title="Been Here"></i>
+              {{ else if eq . "neato" }}
+              <i class="bi bi-star place-type-icon text-warning me-2" title="Notable Place"></i>
+              {{ else if eq . "buckit" }}
+              <i class="bi bi-bucket place-type-icon text-danger me-2" title="Bucket List"></i>
+              {{ else if eq . "avoid" }}
+              <i class="bi bi-x-circle place-type-icon text-danger me-2" title="Not Recommended"></i>
+              {{ end }}
+            {{ end }}
+          </div>
+
+          <!-- Description -->
+          {{ with .Description }}
+          <p class="mb-3">{{ . }}</p>
+          {{ end }}
+
+          <!-- Tags -->
+          <div class="place-metadata">
+            {{ with .Params.tags }}
+              <div>
+                <i class="bi bi-tags-fill me-2"></i>
+                {{ range . }}
+                <span class="badge bg-secondary me-1">{{ . }}</span>
+                {{ end }}
+              </div>
+            {{ end }}
+          </div>
+        </div>
+      </div>
+    </div>
+    {{ end }}
+  </div>
+</div>
+{{ end }} 

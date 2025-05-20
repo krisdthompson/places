@@ -1,0 +1,17 @@
+<nav class="navbar navbar-expand navbar-light bg-white border-bottom">
+    <div class="container">
+        <!-- Left side - Places -->
+        <a class="navbar-brand text-primary fw-semibold" href="/places">
+            <i class="bi bi-geo-alt-fill me-2"></i>Places
+        </a>
+
+        <!-- Right side - Contact -->
+        <ul class="navbar-nav">
+            <li class="nav-item">
+                <a class="nav-link rounded px-3{{ if eq .Section "contact" }} active bg-light{{ end }}" href="/contact/">
+                    <i class="bi bi-envelope me-1"></i>Contact
+                </a>
+            </li>
+        </ul>
+    </div>
+</nav> 

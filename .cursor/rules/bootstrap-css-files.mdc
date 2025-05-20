@@ -1,0 +1,13 @@
+---
+description: 
+globs: 
+alwaysApply: true
+---
++ Always use Boostrap5 before custom CSS if possible
++ Put any needed CSS in a well organized CSS file
++ never put CSS styles inline in HTML when it can be avoided, always use the theme CSS file and provide a local CSS to override and add to the theme CSS
++ Disable caching of CSS and JS in development
++ modify [start.sh](mdc:start.sh) as needed to support easy start with different options like logging
++ avoid and eradicate development artifacts that lead to duplication and noise. Seek files to remove based on refactoring
++ use partials to enable smaller template files
++ use theme 'simple'
